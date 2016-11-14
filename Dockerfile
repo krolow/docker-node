@@ -7,7 +7,3 @@ RUN curl -L https://github.com/maxcnunes/waitforit/releases/download/v1.4.0/wait
     chmod +x /usr/local/bin/waitforit
 
 WORKDIR /app
-RUN useradd -ms /bin/bash app && \
-	chown -R app /app
-USER app
-WORKDIR /app
