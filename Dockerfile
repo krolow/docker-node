@@ -12,7 +12,3 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv 7F0CEB10 && \
   apt-get install mongodb-org-shell mongodb-org-tools
 
 WORKDIR /app
-RUN useradd -ms /bin/bash app && \
-	chown -R app /app
-USER app
-WORKDIR /app
