@@ -1,4 +1,4 @@
-FROM node:6.9.1
+FROM node:4.4.7
 
 RUN curl -L https://raw.githubusercontent.com/dockito/vault/master/ONVAULT > /usr/local/bin/ONVAULT && \
     chmod +x /usr/local/bin/ONVAULT
